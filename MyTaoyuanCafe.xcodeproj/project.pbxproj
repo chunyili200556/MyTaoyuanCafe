@@ -12,6 +12,8 @@
 		27386A8820F0E12F00F2E947 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27386A8620F0E12F00F2E947 /* Main.storyboard */; };
 		27386A8A20F0E13000F2E947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27386A8920F0E13000F2E947 /* Assets.xcassets */; };
 		27386A8D20F0E13000F2E947 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27386A8B20F0E13000F2E947 /* LaunchScreen.storyboard */; };
+		27386A9720F0E19E00F2E947 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 27386A9520F0E19E00F2E947 /* Reachability.m */; };
+		27386A9920F0E3F400F2E947 /* CafeDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27386A9820F0E3F400F2E947 /* CafeDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		27386A8920F0E13000F2E947 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27386A8C20F0E13000F2E947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27386A8E20F0E13000F2E947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27386A9420F0E19E00F2E947 /* MyTaoyuanCafe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyTaoyuanCafe-Bridging-Header.h"; sourceTree = "<group>"; };
+		27386A9520F0E19E00F2E947 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		27386A9620F0E19E00F2E947 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		27386A9820F0E3F400F2E947 /* CafeDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +62,14 @@
 			children = (
 				27386A8220F0E12F00F2E947 /* AppDelegate.swift */,
 				27386A8420F0E12F00F2E947 /* ViewController.swift */,
+				27386A9820F0E3F400F2E947 /* CafeDownloader.swift */,
 				27386A8620F0E12F00F2E947 /* Main.storyboard */,
 				27386A8920F0E13000F2E947 /* Assets.xcassets */,
 				27386A8B20F0E13000F2E947 /* LaunchScreen.storyboard */,
+				27386A9620F0E19E00F2E947 /* Reachability.h */,
+				27386A9520F0E19E00F2E947 /* Reachability.m */,
 				27386A8E20F0E13000F2E947 /* Info.plist */,
+				27386A9420F0E19E00F2E947 /* MyTaoyuanCafe-Bridging-Header.h */,
 			);
 			path = MyTaoyuanCafe;
 			sourceTree = "<group>";
@@ -96,6 +106,7 @@
 				TargetAttributes = {
 					27386A7E20F0E12F00F2E947 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -136,6 +147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				27386A8520F0E12F00F2E947 /* ViewController.swift in Sources */,
+				27386A9920F0E3F400F2E947 /* CafeDownloader.swift in Sources */,
+				27386A9720F0E19E00F2E947 /* Reachability.m in Sources */,
 				27386A8320F0E12F00F2E947 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PK8ATU8493;
 				INFOPLIST_FILE = MyTaoyuanCafe/Info.plist;
@@ -289,6 +303,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = billy200556.MyTaoyuanCafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyTaoyuanCafe/MyTaoyuanCafe-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PK8ATU8493;
 				INFOPLIST_FILE = MyTaoyuanCafe/Info.plist;
@@ -307,6 +324,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = billy200556.MyTaoyuanCafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyTaoyuanCafe/MyTaoyuanCafe-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
